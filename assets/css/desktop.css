@@ -1,0 +1,80 @@
+@media screen and (min-width: 1025px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        padding: 20px 50px 20px 50px;
+    }
+    .icon {
+        display: none;
+    }
+    .bg-color {
+        position: absolute;
+        float: left;
+        height: 100vh;
+        background-color: #fcbf3c;
+        z-index: -1;
+    }
+    .img,
+    .sendmessage {
+        border-radius: 10px;
+        box-shadow: 0px 0px 80px -40px black;
+    }
+    .img-home,
+    .img-left {
+        max-height: 70vh;
+        width: auto;
+        margin-right: 100px;
+    }
+    .img-about {
+        max-height: 70vh;
+        width: auto;
+        margin-left: 100px;
+    }
+    .text {
+        max-width: 30vmax;
+    }
+    .target {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 70px 50px;
+    }
+    .project-gallery .grid li.small {
+        flex-basis: 40%;
+    }
+    .project-gallery .grid li.large {
+        flex-basis: 60%;
+    }
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1500px) {
+    .img-left,
+    .img-about {
+        max-height: 60vh;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1349px) {
+    .img-left,
+    .img-about {
+        max-height: 50vh;
+    }
+    h1 {
+        font-size: 3.2rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    p,
+    .list {
+        font-size: 1rem;
+    }
+}

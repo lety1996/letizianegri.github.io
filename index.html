@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>Negri Letizia - Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/desktop.css">
+    <link rel="stylesheet" href="./assets/css/tablet.css">
+    <link rel="stylesheet" href="./assets/css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_A3roRmdWmI5vewgwv0ujz");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm("service_qp2r9wz", 'template_qi3c9oj', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class='logo'>
+            <h2>NEGRI LETIZIA</h2>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+        </div>
+        </a>
+        <nav id="nav" class="nav">
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown"><a href="#resume" class="label">Resume</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#about" class="option">About Me</a></li>
+                    <li><a href="#experience" class="option">Experience</a></li>
+                    <li><a href="#skills" class="option">Skills</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#portfolio">Portfolio</a>
+                <ul class="dropdown-menu">
+                    <li><a href="./porfolio/project.html">Project</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Project</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </nav>
+    </header>
+    <div class="bg-color bg-home" style="width: 40vmax;"></div>
+    <section class="home target" id="home">
+        <img class="img img-home" src="./assets/images/img-profilo.jpg" alt="">
+        <div class="text">
+            <h3 class="yellow">HELLO, I'M</h3>
+            <h1>Negri<br> Letizia
+            </h1>
+            <h3>Designer</h3>
+        </div>
+    </section>
+    <div class="bg-color" style="width: 50vmax;"></div>
+    <section id="resume">
+        <article class="about target" id="about">
+            <div class="text">
+                <h3 class="white">WHO I AM</h3>
+                <h1>About Me</h1>
+                <p>In 2019 I graduated in Interior Design at the Politecnico di Milano: during this experience I was able to discover different aspects of design, getting more interested in the graphic part of the projects. <br> At the end of my studies
+                    I started to work in Publicis Sapient, an agency in Milan, where I had the opportunity to grow professionally, thanks to the stimulating and dynamic environment and the time spent, as an agency consultant, in the digital marketing
+                    team of Vodafone Italia.
+                </p>
+                <a href="https://drive.google.com/file/d/1YUJ6pHU3vYfSK-Ls9JpTvWR30-KHx9mM/view?usp=sharing" class="btn-outline" target="_blank">Download CV</a>
+            </div>
+            <img class="img img-about" src="./assets/images/img-about.jpg" alt="">
+        </article>
+        <div class="bg-color" style="width: 50vmax;"></div>
+        <article class="experience target" id="experience">
+            <img class="img img-left" src="./assets/images/img-experience.jpg" alt="">
+            <div class="text">
+                <h3 class="yellow">WHAT I DID</h3>
+                <h1>Experience</h1>
+                <ul class="list">
+                    <li>
+                        <ul>
+                            <li class="title yellow">2019 - present</li>
+                            <li class="title">JUNIOR DESIGNER</li>
+                            <li class="sub">Publicis Sapient, Milan, Italy</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="title yellow">2019</li>
+                            <li class="title">WEB DESIGN COURSE</li>
+                            <li class="sub">Dot. Academy, Milan, Italy</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="title yellow">2016 - 2019</li>
+                            <li class="title">BACHELOR'S DEGREE IN INTERIOR DESIGN</li>
+                            <li class="sub">Politecnico di Milano, Milan, Italy</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="skills target" id="skills">
+            <div>
+                <h3 class="yellow">WHAT I KNOW</h3>
+                <h1>Skills</h1>
+                <ul class="grid">
+                    <li class="cell skill">
+                        <img src="./assets/images/img-graphic.png" alt="">
+                        <h4>GRAPHIC DESIGN</h4>
+                        <ul>
+                            <li class="sub">Photoshop</li>
+                            <li class="sub">Illustrator</li>
+                            <li class="sub">Indesign</li>
+                        </ul>
+                    </li>
+                    <li class="cell skill">
+                        <img src="./assets/images/img-uiux.png" alt="">
+                        <h4>UX/UI DESIGN</h4>
+                        <ul>
+                            <li class="sub">Adobe XD</li>
+                            <li class="sub">Sketch</li>
+                        </ul>
+                    </li>
+                    <li class="cell skill">
+                        <img src="./assets/images/img-motion.png" alt="">
+                        <h4>MOTION GRAPHIC</h4>
+                        <ul>
+                            <li class="sub">Adobe Animate CC</li>
+                            <li class="sub">After Effects</li>
+                            <li class="sub">Premiere Pro</li>
+                        </ul>
+                    </li>
+                    <li class="cell skill">
+                        <img src="./assets/images/img-web.png" alt="">
+                        <h4>WEB DESIGN</h4>
+                        <ul>
+                            <li class="sub">HTML/CSS</li>
+                            <li class="sub">Javascript</li>
+                            <li class="sub">Wordpress</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <section class="portfolio target" id="portfolio">
+        <div>
+            <h3 class="yellow">MY WORKS</h3>
+            <h1>Portfolio</h1>
+            <ul class="grid">
+                <li class="cell">
+                    <div class="img-project" style="background-image: url(./assets/images/img-experience.jpg);"></div>
+                    <div class="project">
+                        <h4>Project</h4>
+                        <a href="./porfolio/project.html" class="readmore">Read More</a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-project" style="background-image: url(./assets/images/img-experience.jpg);"></div>
+                    <div class="project">
+                        <h4>Project</h4>
+                        <a href="#" class="readmore">Read More</a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-project" style="background-image: url(./assets/images/img-experience.jpg);"></div>
+                    <div class="project">
+                        <h4>Project</h4>
+                        <a href="#" class="readmore">Read More</a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-project" style="background-image: url(./assets/images/img-experience.jpg);"></div>
+                    <div class="project">
+                        <h4>Project</h4>
+                        <a href="#" class="readmore">Read More</a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-project" style="background-image: url(./assets/images/img-experience.jpg);"></div>
+                    <div class="project">
+                        <h4>KIT ADV</h4>
+                        <a href="#" class="readmore">Read More</a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div class="img-project" style="background-image: url(./assets/images/img-experience.jpg);"></div>
+                    <div class="project">
+                        <h4>Project</h4>
+                        <a href="#" class="readmore">Read More</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="bg-color bg-home" style="width: 40vmax;"></div>
+    <section class="contact target" id="contact">
+        <div class="sendmessage">
+            <h4 class="white">SEND ME A MESSAGE</h4>
+            <form id="contact-form">
+                <input type="text" name="name" class="name" placeholder="Name" required />
+                <input type="email" name="email" class="email" placeholder="Email" required/>
+                <input type="text" name="subject" class="subject" placeholder="Subject" required/>
+                <textarea placeholder="Message" name="message" class="message" required></textarea>
+                <input type="submit" value="Send Message" />
+            </form>
+        </div>
+        <div>
+            <h3 class="yellow">KEEP IN TOUCH</h3>
+            <h1>Contact Me</h1>
+            <ul class="list">
+                <li>
+                    <ul>
+                        <li class="title yellow">EMAIL</li>
+                        <li class="sub">lety.negri@gmail.com</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="title yellow">FIND ME ON</li>
+                        <li class="sub">
+                            <a href="https://www.linkedin.com/in/letizia-negri-013090193/" target="_blank"><img src="./assets/images/icona-linkedin.png" alt="icona linkedin"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/validation.js"></script>
+</body>
+
+</html>
